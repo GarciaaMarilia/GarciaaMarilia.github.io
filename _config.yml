@@ -4,3 +4,7 @@ plugins:
 
 title: Marilia Garcia Portfolio
 description: Frontend Developer Portfolio
+
+# Custom configurations
+author: Marilia Garcia
+avatar: /assets/images/your-photo.jpg 

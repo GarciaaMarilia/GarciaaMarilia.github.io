@@ -1,0 +1,30 @@
+/* Custom styles for the left sidebar */
+body {
+    display: flex;
+  }
+  
+  #sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  #main-content {
+    margin-left: 270px; /* Same width as the sidebar + some extra spacing */
+    padding: 20px;
+  }
+  
+  .avatar {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .tech-icons img {
+    width: 40px;
+    margin: 5px;
+  }
+  
