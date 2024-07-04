@@ -1,13 +1,12 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f0f0f0;
   color: #333;
 }
 
 header {
-  background: #333;
+  background-color: #333;
   color: #fff;
   padding: 10px 20px;
 }
@@ -20,6 +19,7 @@ header {
 
 header h1 {
   margin: 0;
+  font-size: 24px;
 }
 
 header nav ul {
@@ -49,22 +49,35 @@ header nav ul li a {
 }
 
 main {
-  padding: 20px;
-}
-
-#inicio {
-  text-align: center;
-  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background: url('../assets/img/background.jpg') no-repeat center center/cover;
   color: #fff;
+  text-align: center;
 }
 
-#inicio h2 {
+.intro {
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.intro h2 {
   margin-top: 0;
 }
 
 .social-links img {
   width: 24px;
   height: 24px;
-  margin-right: 10px;
+  margin: 0 10px;
 }
