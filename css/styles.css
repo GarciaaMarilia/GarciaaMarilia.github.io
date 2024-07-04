@@ -12,21 +12,25 @@ header {
   padding: 10px 20px;
 }
 
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header h1 {
-  display: inline;
   margin: 0;
 }
 
 header nav ul {
   list-style: none;
   padding: 0;
-  display: inline;
-  margin-left: 20px;
+  display: flex;
+  gap: 15px;
 }
 
 header nav ul li {
   display: inline;
-  margin-right: 10px;
 }
 
 header nav ul li a {
@@ -35,17 +39,28 @@ header nav ul li a {
 }
 
 .language-switcher {
-  float: right;
+  display: flex;
+  gap: 10px;
 }
 
 .language-switcher a {
   color: #fff;
   text-decoration: none;
-  margin-left: 10px;
 }
 
 main {
   padding: 20px;
+}
+
+#inicio {
+  text-align: center;
+  padding: 50px 20px;
+  background: url('../assets/img/background.jpg') no-repeat center center/cover;
+  color: #fff;
+}
+
+#inicio h2 {
+  margin-top: 0;
 }
 
 .social-links img {
