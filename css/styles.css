@@ -61,6 +61,7 @@ header nav ul li a {
 .theme-switch-wrapper {
  display: flex;
  align-items: center;
+ gap: 10px; /* Adicione um espaçamento entre o ícone de lua e o switch */
 }
 
 .theme-switch {
