@@ -98,7 +98,7 @@ header nav ul li a {
 }
 
 input:checked + .slider {
- background-color: #66bb6a;
+ background-color: #333;
 }
 
 input:checked + .slider:before {
@@ -139,6 +139,11 @@ main {
 
 .intro h2 {
  margin-top: 0;
+ font-size: 32px;
+}
+
+.intro p {
+ font-size: 18px;
 }
 
 .social-links img {

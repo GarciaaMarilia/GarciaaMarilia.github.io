@@ -3,7 +3,7 @@ function changeLanguage(language) {
  if (language === "en") {
   document.querySelector("h2").textContent = "Hello, visitor! 👋";
   document.querySelector("p").textContent =
-   "My name is Marília Garcia, Front-end Developer";
+   "My name is Marília Garcia, Fullstack Developer";
   document.querySelectorAll("nav a")[0].textContent = "Home";
   document.querySelectorAll("nav a")[1].textContent = "About";
   document.querySelectorAll("nav a")[2].textContent = "Projects";
@@ -11,7 +11,7 @@ function changeLanguage(language) {
  } else if (language === "fr") {
   document.querySelector("h2").textContent = "Bonjour, visiteur! 👋";
   document.querySelector("p").textContent =
-   "Je m'appelle Marília Garcia, Développeur Front-end";
+   "Je m'appelle Marília Garcia, Développeur Fullstack";
   document.querySelectorAll("nav a")[0].textContent = "Accueil";
   document.querySelectorAll("nav a")[1].textContent = "À propos";
   document.querySelectorAll("nav a")[2].textContent = "Projets";
@@ -19,7 +19,7 @@ function changeLanguage(language) {
  } else {
   document.querySelector("h2").textContent = "Olá, visitante! 👋";
   document.querySelector("p").textContent =
-   "Meu nome é Marília Garcia, Desenvolvedor Front-end";
+   "Meu nome é Marília Garcia, Desenvolvedor Fullstack";
   document.querySelectorAll("nav a")[0].textContent = "Início";
   document.querySelectorAll("nav a")[1].textContent = "Sobre";
   document.querySelectorAll("nav a")[2].textContent = "Projetos";
