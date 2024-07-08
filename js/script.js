@@ -17,7 +17,7 @@ function changeLanguage(language) {
  } else {
   document.querySelector("h2").textContent = "Olá, visitante! 👋";
   document.querySelector("p").textContent =
-   "Meu nome é Marília Garcia, Desenvolvedor Fullstack";
+   "Meu nome é Marília Garcia, Desenvolvedora Fullstack";
   document.querySelectorAll("nav a")[0].textContent = "Início";
   document.querySelectorAll("nav a")[1].textContent = "Sobre";
   document.querySelectorAll("nav a")[2].textContent = "Projetos";
