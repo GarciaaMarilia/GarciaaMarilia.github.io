@@ -7,15 +7,13 @@ function changeLanguage(language) {
   document.querySelectorAll("nav a")[0].textContent = "Home";
   document.querySelectorAll("nav a")[1].textContent = "About";
   document.querySelectorAll("nav a")[2].textContent = "Projects";
-  document.querySelectorAll("nav a")[3].textContent = "Contact";
  } else if (language === "fr") {
   document.querySelector("h2").textContent = "Bonjour, visiteur! 👋";
   document.querySelector("p").textContent =
-   "Je m'appelle Marília Garcia, Développeur Fullstack";
+   "Je m'appelle Marília Garcia, Développeuse Fullstack";
   document.querySelectorAll("nav a")[0].textContent = "Accueil";
   document.querySelectorAll("nav a")[1].textContent = "À propos";
   document.querySelectorAll("nav a")[2].textContent = "Projets";
-  document.querySelectorAll("nav a")[3].textContent = "Contact";
  } else {
   document.querySelector("h2").textContent = "Olá, visitante! 👋";
   document.querySelector("p").textContent =
@@ -23,7 +21,6 @@ function changeLanguage(language) {
   document.querySelectorAll("nav a")[0].textContent = "Início";
   document.querySelectorAll("nav a")[1].textContent = "Sobre";
   document.querySelectorAll("nav a")[2].textContent = "Projetos";
-  document.querySelectorAll("nav a")[3].textContent = "Contato";
  }
 }
 
