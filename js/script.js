@@ -1,25 +1,31 @@
 function changeLanguage(language) {
  document.documentElement.lang = language;
  if (language === "en") {
-  document.querySelector("h2").textContent = "Hello!";
-  document.querySelector("p").textContent =
+  document.querySelector("#inicio .section-title").textContent = "Hello!";
+  document.querySelector("#inicio .intro-text").textContent =
    "My name is Marília Garcia, Fullstack Developer";
   document.querySelectorAll("nav a")[0].textContent = "Home";
   document.querySelectorAll("nav a")[1].textContent = "About";
   document.querySelectorAll("nav a")[2].textContent = "Projects";
+  document.querySelector("#sobre .section-title").textContent = "About";
+  document.querySelector("#projetos .section-title").textContent = "Projects";
  } else if (language === "fr") {
-  document.querySelector("h2").textContent = "Bonjour!";
-  document.querySelector("p").textContent =
+  document.querySelector("#inicio .section-title").textContent = "Bonjour!";
+  document.querySelector("#inicio .intro-text").textContent =
    "Je m'appelle Marília Garcia, Développeuse Fullstack";
   document.querySelectorAll("nav a")[0].textContent = "Accueil";
   document.querySelectorAll("nav a")[1].textContent = "À propos";
   document.querySelectorAll("nav a")[2].textContent = "Projets";
+  document.querySelector("#sobre .section-title").textContent = "À propos";
+  document.querySelector("#projetos .section-title").textContent = "Projets";
  } else {
-  document.querySelector("h2").textContent = "Olá!";
-  document.querySelector("p").textContent =
+  document.querySelector("#inicio .section-title").textContent = "Olá!";
+  document.querySelector("#inicio .intro-text").textContent =
    "Meu nome é Marília Garcia, Desenvolvedora Fullstack";
   document.querySelectorAll("nav a")[0].textContent = "Início";
   document.querySelectorAll("nav a")[1].textContent = "Sobre";
   document.querySelectorAll("nav a")[2].textContent = "Projetos";
+  document.querySelector("#sobre .section-title").textContent = "Sobre";
+  document.querySelector("#projetos .section-title").textContent = "Projetos";
  }
 }
