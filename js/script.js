@@ -9,6 +9,7 @@ function changeLanguage(language) {
   document.querySelectorAll("nav a")[2].textContent = "Projects";
   document.querySelector("#sobre .section-title").textContent = "About";
   document.querySelector("#projetos .section-title").textContent = "Projects";
+  document.querySelector("#inicio h1").textContent = "Connect with me:";
  } else if (language === "fr") {
   document.querySelector("#inicio .section-title").textContent = "Bonjour!";
   document.querySelector("#inicio .intro-text").textContent =
@@ -18,6 +19,7 @@ function changeLanguage(language) {
   document.querySelectorAll("nav a")[2].textContent = "Projets";
   document.querySelector("#sobre .section-title").textContent = "À propos";
   document.querySelector("#projetos .section-title").textContent = "Projets";
+  document.querySelector("#inicio h1").textContent = "Connectez-vous avec moi:";
  } else {
   document.querySelector("#inicio .section-title").textContent = "Olá!";
   document.querySelector("#inicio .intro-text").textContent =
