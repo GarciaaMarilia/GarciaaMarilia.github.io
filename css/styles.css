@@ -89,6 +89,10 @@ header nav ul li a {
  width: 20px;
 }
 
+.projects-content {
+ flex-direction: row;
+}
+
 input:checked + .slider {
  background-color: #333;
 }
@@ -137,7 +141,7 @@ section {
 
 .project-container {
  position: relative;
- display: inline-block;
+ /* display: inline-block; */
 }
 
 .project-container img {
