@@ -90,7 +90,10 @@ header nav ul li a {
 }
 
 .projects-content {
- flex-direction: row;
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ flex-wrap: wrap;
 }
 
 input:checked + .slider {
@@ -141,7 +144,7 @@ section {
 
 .project-container {
  position: relative;
- /* display: inline-block; */
+ width: 45%;
 }
 
 .project-container img {
