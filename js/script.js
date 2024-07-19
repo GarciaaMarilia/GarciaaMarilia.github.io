@@ -29,5 +29,6 @@ function changeLanguage(language) {
   document.querySelectorAll("nav a")[2].textContent = "Projetos";
   document.querySelector("#sobre .section-title").textContent = "Sobre";
   document.querySelector("#projetos .section-title").textContent = "Projetos";
+  document.querySelector("#inicio h1").textContent = "Conecte-se comigo:";
  }
 }
