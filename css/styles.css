@@ -91,9 +91,15 @@ header nav ul li a {
 
 .projects-content {
  display: flex;
- justify-content: center;
- gap: 20px;
- flex-wrap: wrap;
+ overflow-x: auto; /* Para rolagem horizontal */
+ white-space: nowrap; /* Evita quebra de linha dos itens */
+ padding: 10px; /* Adiciona algum espaçamento interno */
+}
+
+.project-container {
+ display: inline-block; /* Faz com que os containers fiquem em linha */
+ margin-right: 20px; /* Adiciona espaçamento entre os containers */
+ width: 300px; /* Ajuste a largura conforme necessário */
 }
 
 input:checked + .slider {
@@ -142,10 +148,7 @@ section {
  overflow: auto;
 }
 
-.project-container {
- position: relative;
- width: 45%;
-}
+
 
 .project-container img {
  display: block;
