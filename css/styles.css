@@ -67,39 +67,17 @@ header nav ul li a {
  text-decoration: none;
 }
 
-.slider {
- background-color: #ccc;
- bottom: 0;
- cursor: pointer;
- left: 0;
- position: absolute;
- right: 0;
- top: 0;
- transition: 0.4s;
-}
-
-.slider:before {
- background-color: white;
- bottom: 2px;
- content: "";
- height: 20px;
- left: 2px;
- position: absolute;
- transition: 0.4s;
- width: 20px;
-}
-
 .projects-content {
  display: flex;
- overflow-x: auto; /* Para rolagem horizontal */
- white-space: nowrap; /* Evita quebra de linha dos itens */
- padding: 10px; /* Adiciona algum espaçamento interno */
+ flex-wrap: wrap;
+ justify-content: space-around;
 }
 
-.project-container {
- display: inline-block; /* Faz com que os containers fiquem em linha */
- margin-right: 20px; /* Adiciona espaçamento entre os containers */
- width: 300px; /* Ajuste a largura conforme necessário */
+.project-item {
+ position: relative;
+ flex: 1 1 calc(50% - 20px);
+ box-sizing: border-box;
+ margin: 10px;
 }
 
 input:checked + .slider {
@@ -108,14 +86,6 @@ input:checked + .slider {
 
 input:checked + .slider:before {
  transform: translateX(24px);
-}
-
-.slider.round {
- border-radius: 24px;
-}
-
-.slider.round:before {
- border-radius: 50%;
 }
 
 main {
@@ -148,17 +118,15 @@ section {
  overflow: auto;
 }
 
-
-
-.project-container img {
- display: block;
+.projects-content img {
+ /* display: block; */
  width: 100%;
  height: auto;
 }
 
 .overlay-button {
  position: absolute;
- bottom: 0;
+ bottom: 0px;
  left: 0;
  width: 100%;
  padding: 40px 0;
@@ -175,8 +143,8 @@ section {
 }
 
 .profile-picture img {
- width: 180px;
- height: 180px;
+ width: 200px;
+ height: 200px;
  border-radius: 50%;
  margin-bottom: 20px;
 }
