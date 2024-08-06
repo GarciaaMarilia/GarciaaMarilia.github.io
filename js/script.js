@@ -1,40 +1,70 @@
-function changeLanguage(language) {
- document.documentElement.lang = language;
- if (language === "en") {
-  document.querySelector("#inicio .section-title").textContent = "Hello!";
+document.addEventListener("DOMContentLoaded", () => {
+ function changeLanguage(language) {
+  document.documentElement.lang = language;
+
+  const translations = {
+   en: {
+    inicioSectionTitle: "Hello!",
+    introText: "My name is Marília Garcia, Fullstack Developer",
+    nav: ["Home", "About", "Projects"],
+    sobreSectionTitle: "About",
+    projetosSectionTitle: "Projects",
+    connectText: "Connect with me:",
+    sobreText:
+     "Fullstack Developer with 3 years of experience proficient in React.js, React Native and Node.js. I build reusable parts for websites and mobile applications and make them work well on different devices.",
+   },
+   fr: {
+    inicioSectionTitle: "Bonjour!",
+    introText: "Je m'appelle Marília Garcia, Développeuse Fullstack",
+    nav: ["Accueil", "À propos", "Projets"],
+    sobreSectionTitle: "À propos",
+    projetosSectionTitle: "Projets",
+    connectText: "Connectez-vous avec moi:",
+    sobreText:
+     "Développeuse Fullstack avec 3 ans d'expérience, compétente en React.js, React Native et Node.js. Je construis des composants réutilisables pour des sites web et des applications mobiles, et je veille à ce qu'ils fonctionnent bien sur différents appareils.",
+   },
+   pt: {
+    inicioSectionTitle: "Olá!",
+    introText: "Meu nome é Marília Garcia, Desenvolvedora Fullstack",
+    nav: ["Início", "Sobre", "Projetos"],
+    sobreSectionTitle: "Sobre",
+    projetosSectionTitle: "Projetos",
+    connectText: "Conecte-se comigo:",
+    sobreText:
+     "Desenvolvedora Fullstack com 3 anos de experiência, proficiente em React.js, React Native e Node.js. Construo partes reutilizáveis para sites e aplicativos móveis e garanto que funcionem bem em diferentes dispositivos.",
+   },
+  };
+
+  const selectedLanguage = translations[language];
+
+  // Update section titles and text
+  document.querySelector("#inicio .section-title").textContent =
+   selectedLanguage.inicioSectionTitle;
   document.querySelector("#inicio .intro-text").textContent =
-   "My name is Marília Garcia, Fullstack Developer";
-  document.querySelectorAll("nav a")[0].textContent = "Home";
-  document.querySelectorAll("nav a")[1].textContent = "About";
-  document.querySelectorAll("nav a")[2].textContent = "Projects";
-  document.querySelectorAll("#sobre .section-title").textContent = "About";
-  document.querySelectorAll("#projetos .section-title").textContent = "Projects";
-  document.querySelectorAll("#inicio h1").textContent = "Connect with me:";
-  document.querySelectorAll("#sobre p").textContent =
-   "Fullstack Developer with 3 years of experience proficient in React.js, React Native and Node.js. I build reusable parts for websites and mobile applications and make them work well on different devices.";
- } else if (language === "fr") {
-  document.querySelector("#inicio .section-title").textContent = "Bonjour!";
-  document.querySelector("#inicio .intro-text").textContent =
-   "Je m'appelle Marília Garcia, Développeuse Fullstack";
-  document.querySelectorAll("nav a")[0].textContent = "Accueil";
-  document.querySelectorAll("nav a")[1].textContent = "À propos";
-  document.querySelectorAll("nav a")[2].textContent = "Projets";
-  document.querySelectorAll("#sobre .section-title").textContent = "À propos";
-  document.querySelectorAll("#projetos .section-title").textContent = "Projets";
-  document.querySelectorAll("#inicio h1").textContent = "Connectez-vous avec moi:";
-  document.querySelectorAll("#sobre p").textContent =
-   "Développeuse Fullstack avec 3 ans d'expérience, compétente en React.js, React Native et Node.js. Je construis des composants réutilisables pour des sites web et des applications mobiles, et je veille à ce qu'ils fonctionnent bien sur différents appareils.";
- } else {
-  document.querySelector("#inicio .section-title").textContent = "Olá!";
-  document.querySelector("#inicio .intro-text").textContent =
-   "Meu nome é Marília Garcia, Desenvolvedora Fullstack";
-  document.querySelectorAll("nav a")[0].textContent = "Início";
-  document.querySelectorAll("nav a")[1].textContent = "Sobre";
-  document.querySelectorAll("nav a")[2].textContent = "Projetos";
-  document.querySelectorAll("#sobre .section-title").textContent = "Sobre";
-  document.querySelectorAll("#projetos .section-title").textContent = "Projetos";
-  document.querySelectorAll("#inicio h1").textContent = "Conecte-se comigo:";
-  document.querySelectorAll("#sobre p").textContent =
-   "Desenvolvedora Fullstack com 3 anos de experiência, proficiente em React.js, React Native e Node.js. Construo partes reutilizáveis para sites e aplicativos móveis e garanto que funcionem bem em diferentes dispositivos.";
+   selectedLanguage.introText;
+  document.querySelector("#sobre .section-title").textContent =
+   selectedLanguage.sobreSectionTitle;
+  document.querySelector("#projetos .section-title").textContent =
+   selectedLanguage.projetosSectionTitle;
+  document.querySelector("#inicio strong").textContent =
+   selectedLanguage.connectText;
+  document.querySelector("#sobre p").textContent = selectedLanguage.sobreText;
+
+  const navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach((link, index) => {
+   link.textContent = selectedLanguage.nav[index];
+  });
  }
-}
+
+ changeLanguage("en");
+
+ document
+  .querySelector('.language-switcher [lang="en"]')
+  .addEventListener("click", () => changeLanguage("en"));
+ document
+  .querySelector('.language-switcher [lang="fr"]')
+  .addEventListener("click", () => changeLanguage("fr"));
+ document
+  .querySelector('.language-switcher [lang="pt"]')
+  .addEventListener("click", () => changeLanguage("pt"));
+});
