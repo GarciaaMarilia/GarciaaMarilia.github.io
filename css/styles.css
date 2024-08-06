@@ -1,12 +1,9 @@
 body {
  font-family: "Roboto", sans-serif;
- margin: 0;
- padding: 0;
  color: #333;
  background-color: #0a1326;
  transition: background-color 0.3s, color 0.3s;
  scroll-behavior: smooth;
- height: 100%;
  overflow: hidden;
 }
 
@@ -17,11 +14,10 @@ html {
 header {
  background-color: #0a1326;
  color: #fff;
- padding: 10px 0px;
+ padding: 10px;
  position: fixed;
  width: 100%;
  top: 0;
- z-index: 1000;
 }
 
 .header-content {
@@ -31,13 +27,8 @@ header {
 }
 
 header h1 {
- padding: 0px 50px;
  font-size: 24px;
  font-family: "Open Sans", sans-serif;
-}
-
-header nav {
- justify-content: center;
 }
 
 header nav ul {
@@ -46,25 +37,15 @@ header nav ul {
  gap: 20px;
 }
 
-header nav ul li {
- display: inline;
-}
-
 header nav ul li a {
+ flex: 1;
  color: #fff;
  text-decoration: none;
 }
 
 .language-switcher {
- display: flex;
- align-items: center;
- padding: 0px 25px;
- gap: 10px;
-}
-
-.language-switcher a {
- color: #fff;
- text-decoration: none;
+ margin-right: 40px;
+ margin-left: 20px;
 }
 
 .projects-content {
@@ -77,19 +58,13 @@ header nav ul li a {
  position: relative;
  flex: 1 1 calc(50% - 20px);
  box-sizing: border-box;
- margin: 10px;
 }
 
-input:checked + .slider {
- background-color: #333;
-}
-
-input:checked + .slider:before {
- transform: translateX(24px);
-}
-
-main {
- margin-top: 80px;
+.projects-content img {
+ width: 600px;
+ height: auto;
+ margin: 0 auto;
+ display: block;
 }
 
 section {
@@ -109,22 +84,16 @@ section {
  flex-direction: column;
  justify-content: center;
  align-items: center;
- width: 800px;
- max-width: 1000px;
+ width: 70%;
+ max-width: 800px;
+ height: 60%;
  max-height: 600px;
  background-color: rgba(0, 0, 0, 0.5);
  padding: 20px;
  border-radius: 10px;
  text-align: center;
  overflow: auto;
-}
-
-.projects-content img {
- width: 100%;
- max-width: 600px;
- height: auto;
- margin: 0 auto;
- display: block;
+ margin-top: 100px;
 }
 
 .overlay-button {
@@ -153,12 +122,11 @@ section {
 }
 
 .intro h2 {
- margin-top: 0;
  font-size: 32px;
 }
 
 .intro p {
- font-size: 18px;
+ font-size: 20px;
 }
 
 .social-links {
@@ -171,4 +139,34 @@ section {
  width: 24px;
  height: 24px;
  margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+ .projects-content img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+ }
+
+ .intro {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 550px;
+ }
+
+ header nav ul {
+  gap: 8px;
+  list-style: none;
+ }
+
+ .language-switcher {
+  margin-left: 40px;
+  margin-right: 10px;
+ }
+
+ .language-switcher img {
+  width: 20px;
+  height: 15px;
+ }
 }
