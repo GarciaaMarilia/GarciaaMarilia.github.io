@@ -58,6 +58,7 @@ header nav ul li a {
  position: relative;
  flex: 1 1 calc(50% - 20px);
  box-sizing: border-box;
+ margin-bottom: 30px;
 }
 
 .projects-content img {
@@ -65,6 +66,11 @@ header nav ul li a {
  height: auto;
  margin: 0 auto;
  display: block;
+}
+
+.repositorys-links {
+ display: auto;
+ margin-bottom: 20px;
 }
 
 section {
