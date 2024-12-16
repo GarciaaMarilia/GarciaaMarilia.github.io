@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
  }
 
- changeLanguage("en");
+ changeLanguage("fr");
 
  document
   .querySelector('.language-switcher [lang="en"]')
