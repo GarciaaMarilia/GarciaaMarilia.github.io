@@ -22,17 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     connectText: "Connectez-vous avec moi:",
     sobreText:
      "Développeuse Fullstack avec 3 ans d'expérience, compétente en React.js, React Native et Node.js. Je construis des composants réutilisables pour des sites web et des applications mobiles, et je veille à ce qu'ils fonctionnent bien sur différents appareils.",
-   },
-   pt: {
-    inicioSectionTitle: "Olá!",
-    introText: "Meu nome é Marília Garcia, Desenvolvedora Fullstack",
-    nav: ["Início", "Sobre", "Projetos"],
-    sobreSectionTitle: "Sobre",
-    projetosSectionTitle: "Projetos",
-    connectText: "Conecte-se comigo:",
-    sobreText:
-     "Desenvolvedora Fullstack com 3 anos de experiência, proficiente em React.js, React Native e Node.js. Construo partes reutilizáveis para sites e aplicativos móveis e garanto que funcionem bem em diferentes dispositivos.",
-   },
+   }
   };
 
   const selectedLanguage = translations[language];
@@ -64,7 +54,4 @@ document.addEventListener("DOMContentLoaded", () => {
  document
   .querySelector('.language-switcher [lang="fr"]')
   .addEventListener("click", () => changeLanguage("fr"));
- document
-  .querySelector('.language-switcher [lang="pt"]')
-  .addEventListener("click", () => changeLanguage("pt"));
 });
