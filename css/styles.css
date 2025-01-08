@@ -177,6 +177,18 @@ section {
  height: 100%;
 }
 
+.custom-link {
+ color: white;
+ font-weight: bold;
+ text-decoration: none;
+ padding-inline: 10px;
+ transition: color 0.3s ease;
+}
+
+.custom-link:hover {
+ font-size: x-large;
+}
+
 @media (max-width: 600px) {
  .projects-content img {
   width: 100%;
